@@ -73,7 +73,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
         <div class="col"></div>
         <div class="col-2">
           <img class="img1" src="Image/book.png" alt="" />
-          <img class="img2" src="Image/worker.jpg" alt="" />
+          <img class="img2" src="Image/book.png" alt="" />
+          <img class="img3" src="Image/worker.jpg" alt="" />
         </div>
 
         <div class="col">
@@ -130,5 +131,5 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
   </body>
 </html>
 <?php } else {
-  header("Location: index.php");
+  header("Location: cutiform.php");
 } ?>

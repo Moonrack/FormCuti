@@ -94,5 +94,5 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {   ?>
 
     </html>
 <?php } else {
-    header("Location: index.php");
+    header("Location: cutiform.php");
 } ?>

@@ -1,0 +1,48 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(Image/bg.jpeg);
+}
+
+.navbar {
+  background-color: #006f3c;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+margin-bottom: 6rem;
+}
+
+.nav-link {
+  font-size: larger;
+  font-weight: normal;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ca4c8f;
+  font-weight: bold;
+}
+
+.nav-link.active {
+  color: #ca4c8f;
+  font-weight: bold;
+}
+#home {
+  opacity: 0.9;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn-hover {
+  background-color: #252525; /* Green */
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.btn-hover:hover {
+  background-color: #006f3c; /* Green */
+  border: none;
+  color: white;
+}

@@ -119,7 +119,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
                 <td><?= date('d-m-Y', strtotime($data['akhir'])) ?></td>
                 <td><?= $data['alasan'] ?></td>
                 <td><?= $data['status'] ?></td>
-                <td><a href="print.php"><button class="btn btn-warning float-right">Print</button></a></td>
+                <td><a href="print.php?hal=print&id=<?= $data['id'] ?>" class="btn btn-warning"> Print </a></td>
               </tr>
             <?php endwhile;  ?>
           </table>
@@ -165,5 +165,5 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
 
   </html>
 <?php } else {
-  header("Location: index.php");
+  header("Location: cutiform.php");
 } ?>

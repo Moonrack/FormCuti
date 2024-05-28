@@ -17,9 +17,9 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
 	$role = test_input($_POST['role']);
 
 	if (empty($username)) {
-		header("Location: ../index.php?error=User Name is Required");
+		header("Location: ../cutiform.php?error=User Name is Required");
 	} else if (empty($password)) {
-		header("Location: ../index.php?error=Password is Required");
+		header("Location: ../cutiform.php?error=Password is Required");
 	} else {
 
 		// Hashing the password
@@ -45,10 +45,10 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
 					header("Location: ../admin1.php");
 				}
 			} else {
-				header("Location: ../index.php?error=Incorect User name or password");
+				header("Location: ../cutiform.php?error=Incorect User name or password");
 			}
 		} else {
-			header("Location: ../index.php?error=Incorect User name or password");
+			header("Location: ../cutiform.php?error=Incorect User name or password");
 		}
 	}
 }
