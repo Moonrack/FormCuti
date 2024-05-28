@@ -27,7 +27,7 @@ if (mysqli_num_rows($query) < 1) {
 <html>
 
 <head>
-    <title>Formulir Edit data | SMK Coding</title>
+    <title>Formulir Edit data</title>
 </head>
 
 <body>
