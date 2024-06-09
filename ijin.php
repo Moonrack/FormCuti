@@ -94,6 +94,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
               <th>Tanggal Ijin</th>
               <th>Alasan</th>
               <th>Status</th>
+              <th>Aksi</th>
             </tr>
             <?php
             $no = 1;
@@ -111,6 +112,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
                 <td><?= date('d-m-Y', strtotime($data['tgl'])) ?></td>
                 <td><?= $data['alasan'] ?></td>
                 <td><?= $data['status'] ?></td>
+                <td><a href="print_ijin.php?hal=print&id=<?= $data['id'] ?>" class="btn btn-warning"> Print </a></td>
               </tr>
             <?php endwhile;  ?>
           </table>
