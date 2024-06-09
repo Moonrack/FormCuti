@@ -31,7 +31,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto ">
                         <li class="nav-item">
-                            <a class="nav-link active " style="color: #006f3c;" aria-current="true" href="index.php">Home</a>
+                            <a class="nav-link  " style="color: #006f3c;" aria-current="true" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " style="color: #006f3c;" href="tentang.php">Tentang Kami</a>

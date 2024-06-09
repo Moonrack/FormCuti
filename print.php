@@ -34,6 +34,12 @@ $conn->close();
 
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    p {
+        font-size: larger !important;
+        ;
+    }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -60,7 +66,6 @@ $conn->close();
         <p style="font-weight: bold;">Perihal: Permohonan Cuti Tahunan</p>
         <br>
         <p>Dengan Hormat,</p>
-        <br>
         <p>Saya yang bertanda tangan di bawah ini:</p>
         <!--FIX-->
         <?php if ($userFound) : ?>
