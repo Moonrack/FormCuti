@@ -51,7 +51,7 @@ if (mysqli_num_rows($query) < 1) {
     </div>
   </nav>
     <header>
-    <h3 class="container" style="text-align: center;">PENGAJUAN CUTI & IJIN</h3>
+    <h3 class="container" style="text-align: center;">PENGAJUAN CUTI</h3>
     </header>
 
     <form action="edit.php" method="POST">
@@ -61,7 +61,7 @@ if (mysqli_num_rows($query) < 1) {
 
     <div class="card mt-3">
       <div class="card-header bg-success text-white">
-        PENERIMAAN CUTI & IJIN
+        PENERIMAAN CUTI
 
         <!-- untuk print -->
         <a href="logout.php"><button class="btn btn-danger float-right">Logout</button></a><br />

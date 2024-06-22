@@ -34,17 +34,18 @@
     </div>
   </nav>
 
-  <h3 class="container" style="text-align: center;">PENGAJUAN CUTI</h3>
+  <h3 class="container" style="text-align: center;">PENGAJUAN IZIN</h3>
 
+  <!--IJIN-->
   <div class="container">
 
 
     <div class="card mt-3">
       <div class="card-header bg-success text-white">
-        Hai, Admin
-
-        <!-- untuk print -->
+        Pengajuan Izin
         <a href="logout.php"><button class="btn btn-danger float-right">Logout</button></a><br />
+        <!-- untuk print -->
+
         <!--akhir print --->
       </div>
       <div class="card-body">
@@ -53,14 +54,13 @@
             <th>No</th>
             <th>NIP</th>
             <th>Nama</th>
-            <th>Tanggal Mulai</th>
-            <th>Tanggal Masuk</th>
+            <th>Tanggal Ijin</th>
             <th>Alasan</th>
             <th>Status</th>
             <th>Aksi</th>
           </tr>
           <?php
-          $sql = "SELECT * FROM cuti";
+          $sql = "SELECT * FROM ijin";
           $query = mysqli_query($conn, $sql);
           while ($data = mysqli_fetch_array($query)) :
 
@@ -72,19 +72,17 @@
               <td><?= $data['id'] ?></td>
               <td><?= $data['nip'] ?></td>
               <td><?= $data['nama'] ?></td>
-              <td><?= date('d-m-Y', strtotime($data['mulai'])) ?></td>
-              <td><?= date('d-m-Y', strtotime($data['akhir'])) ?></td>
+              <td><?= date('d-m-Y', strtotime($data['tgl'])) ?></td>
               <td><?= $data['alasan'] ?></td>
               <td><?= $data['status'] ?></td>
               <td>
-                <a href="acc_cuti.php?id=<?= $data['id'] ?>" class="btn btn-warning"> Edit </a>
+                <a href="acc_ijin.php?id=<?= $data['id'] ?>" class="btn btn-warning"> Edit </a>
               </td>
             </tr>
           <?php endwhile;  ?>
         </table>
       </div>
     </div>
-  </div>
   </div>
 
   

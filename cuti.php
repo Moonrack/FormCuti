@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "db_conn.php";
-if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
+if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
 ?>
 
   <!DOCTYPE html>
@@ -28,7 +28,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
     <nav class="navbar shadow navbar-expand-lg navbar-dark sticky-top" style="background: white; padding-top: 2rem; margin-bottom: 3rem">
       <div id="navdone" style="margin-left: 4rem; height: 90px">
         <a class="navbar-brand">
-          <img src="Image/logo2.png" alt="" width="150" height="50" class="d-inline-block align-text-top" />
+          <img src="Image/logo2.png" alt="" width="150" height="50" class="align-text-top" />
           <h3 style="font-family: 'Poppins', sans-serif; color: #646464">
             "We are exhaust maker number one in the world"
           </h3>
@@ -47,12 +47,12 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
           <form method="post" action="">
 
             <div class="form-group">
-              <label>NIP</label>
-              <input type="text" name="nip" class="form-control" placeholder="Masukkan NIP Anda" required />
+              <label>NPK</label>
+              <input type="text" name="nip" class="form-control" value="<?= $_SESSION['nip'] ?>" placeholder="Masukkan NPK Anda" required />
             </div>
             <div class="form-group">
               <label>Nama</label>
-              <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Anda" required />
+              <input type="text" name="nama" class="form-control" value="<?= $_SESSION['name'] ?>" placeholder="Masukkan Nama Anda" required />
             </div>
 
             <div class="form-group">
@@ -71,10 +71,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
             </div>
 
             <div class="form-group">
-              <label for="">Status</label>
-              <select class="form-select mb-3 text-center" style="font-weight: bold" name="status" aria-label="Default select example">
-                <option selected value="pending">Pending</option>
-              </select>
+              <input class="form-control" type="hidden" value="pending" name="status" />
             </div>
 
             <button type="submit" class="btn btn-success" name="Submit">Simpan</button>
@@ -87,14 +84,13 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
           Hai,
           <?= $_SESSION['name'] ?>
           <!-- untuk print -->
-          <a href="print.php"><button class="btn btn-warning float-right">Print</button></a><br />
           <!--akhir print --->
         </div>
         <div class="card-body">
           <table class="table table-bordered table-striped">
             <tr>
               <th>No</th>
-              <th>NIP</th>
+              <th>NPK</th>
               <th>Nama</th>
               <th>Tanggal Mulai</th>
               <th>Tanggal Masuk</th>
@@ -108,6 +104,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
             while ($data = mysqli_fetch_array($tampil)) :
 
             ?>
+
               <!-- open -->
 
               <!-- close -->

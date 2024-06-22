@@ -20,7 +20,7 @@ if (isset($_POST['simpan'])) {
     // apakah query update berhasil?
     if ($query) {
         // kalau berhasil alihkan ke halaman list-siswa.php
-        header('Location: admin.php');
+        header('Location: admin_izin.php');
     } else {
         // kalau gagal tampilkan pesan
         die("Gagal menyimpan perubahan...");

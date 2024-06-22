@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "db_conn.php";
-if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
+if (isset($_SESSION['username']) && isset($_SESSION['user_id'])) {
 ?>
 
   <!DOCTYPE html>
@@ -16,7 +16,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
-    <title>Pengajuan Ijin</title>
+    <title>Pengajuan Izin</title>
   </head>
   <style>
     body {
@@ -47,8 +47,8 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
           <form method="post" action="">
 
             <div class="form-group">
-              <label>NIP</label>
-              <input type="text" name="nip" class="form-control" placeholder="Masukkan NIP Anda" required />
+              <label>NPK</label>
+              <input type="text" name="nip" class="form-control" placeholder="Masukkan NPK Anda" required />
             </div>
             <div class="form-group">
               <label>Nama</label>
@@ -56,21 +56,16 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
             </div>
 
             <div class="form-group">
-              <label>Tanggal Ijin</label>
-              <input type="date" name="tgl" class="form-control" placeholder="Input Tanggal Ijin Anda" required />
+              <label>Tanggal Izin</label>
+              <input type="date" name="tgl" class="form-control" placeholder="Input Tanggal Izin Anda" required />
             </div>
 
             <div class="form-group">
               <label>Alasan</label>
-              <input type="text" name="alasan" class="form-control" placeholder="Alasan Ijin Anda" required />
+              <input type="text" name="alasan" class="form-control" placeholder="Alasan Izin Anda" required />
             </div>
 
-            <div class="form-group">
-              <label for="">Status</label>
-              <select class="form-select mb-3 text-center" style="font-weight: bold" name="status" aria-label="Default select example">
-                <option selected value="pending">Pending</option>
-              </select>
-            </div>
+            <input type="hidden" value="pending">
 
             <button type="submit" class="btn btn-success" name="Submit">Simpan</button>
           </form>
@@ -89,7 +84,7 @@ if (isset($_SESSION['username']) && isset($_SESSION['id'])) {
           <table class="table table-bordered table-striped">
             <tr>
               <th>No</th>
-              <th>NIP</th>
+              <th>NPK</th>
               <th>Nama</th>
               <th>Tanggal Ijin</th>
               <th>Alasan</th>

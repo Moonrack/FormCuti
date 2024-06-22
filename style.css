@@ -1,9 +1,8 @@
-
 .col-2 {
   margin-top: 5rem;
   background-color: #006f3c;
   box-shadow: -20px 5px 10px rgba(0, 0, 0, 0.4);
-  
+
   width: 200px;
 }
 .img1 {
@@ -30,7 +29,7 @@
   margin-left: 8rem;
   margin-top: 7rem;
 }
-.card{
+.card {
   color: white;
   margin-top: 5rem;
   background-color: #006f3c;
@@ -56,8 +55,8 @@
   border-radius: 8px;
 }
 .button1 {
-  background-color: #ca4c8f; 
-  color: white; 
+  background-color: #ca4c8f;
+  color: white;
   border: 2px solid #ca4c8f;
 }
 
@@ -65,7 +64,7 @@
   background-color: #ca4c8f;
   color: white;
 }
-.btn{
+.btn {
   background-color: #252525; /* Green */
   border: none;
   color: white;

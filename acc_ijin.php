@@ -4,7 +4,7 @@ include("db_conn.php");
 
 if (!isset($_GET['id'])) {
     // kalau tidak ada id di query string
-    header('Location: admin.php');
+    header('Location: admin_izin.php');
 }
 
 //ambil id dari query string
@@ -51,7 +51,7 @@ if (mysqli_num_rows($query) < 1) {
     </div>
   </nav>
     <header>
-    <h3 class="container" style="text-align: center;">PENGAJUAN CUTI & IJIN</h3>
+    <h3 class="container" style="text-align: center;">PENGAJUAN IZIN</h3>
     </header>
 
     <form action="edit_ijin.php" method="POST">
@@ -61,10 +61,8 @@ if (mysqli_num_rows($query) < 1) {
 
     <div class="card mt-3">
       <div class="card-header bg-success text-white">
-        PENERIMAAN CUTI & IJIN
+        PENERIMAAN IZIN
 
-        <!-- untuk print -->
-        <a href="logout.php"><button class="btn btn-danger float-right">Logout</button></a><br />
         <!--akhir print --->
       </div>
       <div class="card-body">

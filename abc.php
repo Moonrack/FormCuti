@@ -56,7 +56,7 @@ if (mysqli_num_rows($query) < 1) {
         </div>
     </nav>
 
-    <h3 class="container" style="text-align: center;">PENGAJUAN CUTI & IJIN</h3>
+    <h3 class="container" style="text-align: center;">PENGAJUAN CUTI & IZIN</h3>
 
     <div class="container">
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
+if (!isset($_SESSION['username']) && !isset($_SESSION['user_id'])) {   ?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -23,7 +23,9 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
             <div id="navdone" class="container">
                 <a class="navbar-brand">
                     <img src="Image/logo2.png" alt="" width="150" height="50" class="d-inline-block align-text-top">
-
+                    <h3 style="font-family: 'Poppins', sans-serif; color: #646464">
+                        "We are exhaust maker number one in the world"
+                    </h3>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,7 +50,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
         <!--NAVBAR-->
         <div class="card container" style="
         
-        width: 30rem;
+        max-width:max-content;
         height: 30rem;
         background: #ffffff;
         box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.4);
@@ -57,7 +59,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
         
       ">
             <div class="card-body">
-                <img src="Image/logo2.png" alt="" srcset="" style="margin-left: 8.4rem; width: 160px; margin-bottom: 3rem; margin-top: 2rem;">
+                <img src="Image/logo2.png" alt="" srcset="" style="margin-left: 5.5rem; width: 160px; margin-bottom: 3rem; margin-top: 2rem;">
                 <div class="container" style="font-family: 'Poppins', sans-serif; width: 20rem">
                     <form action="php/check-login.php" method="post" class="login-email">
                         <input type="username" class="form-control mb-4 text-center" style="font-weight: bold; color: black" name="username" placeholder="Username" required />
@@ -72,7 +74,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
             color: white;
             font-family: 'Poppins', sans-serif;
             font-weight: bold;
-            margin-left:60px;
+            margin-left:11px;
             background-color: #b34172;
             width: 18.7rem;
           " type="submit">
@@ -83,7 +85,7 @@ if (!isset($_SESSION['username']) && !isset($_SESSION['id'])) {   ?>
             </div>
         </div>
         <p class="text-center mt-4" style="text-decoration: underline; color:white;">Belom Memiliki Akun?</p>
-        <a href="#">
+        <a href="register.php">
             <p class="text-center mt-1" style="text-decoration: underline; color:white; font-weight:bold;">Daftar</p>
         </a>
 

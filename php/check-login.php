@@ -33,7 +33,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['role
 			$row = mysqli_fetch_assoc($result);
 			if ($row['password'] === $password && $row['role'] == $role) {
 				$_SESSION['name'] = $row['name'];
-				$_SESSION['id'] = $row['id'];
+				$_SESSION['user_id'] = $row['user_id'];
 				$_SESSION['role'] = $row['role'];
 				$_SESSION['username'] = $row['username'];
 				$_SESSION['nip'] = $row['nip'];

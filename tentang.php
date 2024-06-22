@@ -24,7 +24,9 @@
     <div id="navdone" class="container">
       <a class="navbar-brand">
         <img src="Image/logo2.png" alt="" width="150" height="50" class="d-inline-block align-text-top">
-
+        <h3 style="font-family: 'Poppins', sans-serif; color: #646464">
+          "We are exhaust maker number one in the world"
+        </h3>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,7 +53,19 @@
   <!--JUMBOTRON-->
   <div class="jumbotron jumbotron-fluid mb-4 text-center">
     <div class="container" id="home">
-      <h1>Profile Perusahaan</h1>
+      <h1>PT. Sakura Java Indonesia</h1>
+      <br>
+      <h2 style="margin-bottom: 4rem;">Company Overview</h2>
+      <div class="row align-items-start text-start">
+        <div class="col">
+          <img src="image/a2.png" alt="">
+          <img src="image/a3.png" alt="">
+        </div>
+        <div class="col" style="margin-right: 8rem;">
+          SAKURA selama lebih dari 50 tahun terus bergandeng teknologi dengan Yamaha. Knalpot merupakan bagian yang tidak terpisahkan dari mesin. Kemajuan teknologi Yamaha yang sangat pesat dan hebat membuat Sakura menjadi lebih mahir dalam industri knalpot di Indonesia. Knalpot memiliki peranan yang sangat penting untuk mengoptimalkan performa motor merujuk kepada penerapan teknologi mesin. Dan Sakura telah teruji selama lebih dari 50 tahun memproduksi knalpot Yamaha dan bersanding dengan teknologi yang dikedepankan oleh Yamaha. Setiap teknologi baru yang dikembangkan oleh Yamaha, sejalan dengan tuntutan Sakura untuk memproduksi knalpot sesuai dengan spesifikasi inovasi teknologi yang diterapkan oleh Yamaha. PT Sakura Java Indonesia adalah nama perusahaan produsen pemegang brand Sakura knalpot. Perusahaan PMA yang berdiri sejak November 1995 dengan stakeholder: SAKURA Kogyo Japan (67%) dan Yamaha motor Co. Japan (33%) menjadi sangat besar dengan memproduksi rata-rata 6000 unit knalpot OEM per hari untuk di distribusikan ke PT. Yamaha Indonesia Motor Manufacturing(YIMM). Perusahaan pembuat knalpot pabrikan yang telah mendapatkan seritifikat ISO 14000 mampu menciptakan knalpot aftermarket. Memenuhi kebutuhan konsumen yang sangat senang dengan kualitas produk yang bagus serta performa tinggi. Sumber daya manusia yang solid dan mampu meningkatkan kinerja hebat dalam menciptakan sebuah knalpot yg sangat berpengaruh pada performa mesin motor , serta R&D yg kuat menjadi andalan teknologi di setiap komponen produk yg tercipta.
+        </div>
+      </div>
+      <h1 style="margin-top:2rem;">Profile Perusahaan</h1>
       <img src="Image/data.png" style="margin-bottom: 2rem;" alt="">
       <h1>Grup Perusahaan Sakura Exhaust</h1>
       <br>
@@ -98,7 +112,13 @@
           </div>
         </div>
         <br>
+        <br>
+        <br>
+        <h1 class="mb-4" style="color: #006f3c;">Supporting
+          YAMAHA RACING
+          IN MOTO GP</h1>
         <!--COROUSEL-->
+        <img class="mb-4" src="image/gp.png" alt="">
 
       </div>
     </div>
